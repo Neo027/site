@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}
+Pro nas
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <h1>Add text</h1>
+    <form method="post">
+        <input type="text" name="title" id="title" class="form-control" placeholder="Write name" required><br>
+        <textarea name="intro" id="intro" class="form-control" placeholder="Write intro" required></textarea><br>
+        <textarea name="text" id="text" class="form-control" placeholder="Write your text" required></textarea><br>
+        
+        <input type="submit" class="btn btn-outline-success" value="Send">
+    </form>
+</div>
+{% endblock %}

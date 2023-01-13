@@ -16,8 +16,11 @@ m = MoneyBox(100)
 while m.capacity != 0:
     print('Write - "Money", if u want to see your balance')
     v = input()
-    if v.lower() == 'money':
-        m.print_money()
+    if v[0] not in '1234567890':
+        if v.lower() == 'money':
+            m.print_money()
+        else:
+            print('incorrect input, try again')
     elif m.can_add(int(v)) == True:
         m.add(int(v))
     else:

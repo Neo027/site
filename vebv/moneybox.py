@@ -22,4 +22,4 @@ while m.capacity != 0:
         m.add(int(v))
     else:
         print(m.can_add(int(v)))
-print('MoneyBox if full')
+print('MoneyBox is full')
